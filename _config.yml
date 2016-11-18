@@ -12,8 +12,8 @@ description: > # this means to ignore newlines until "baseurl:"
   How we build software at D4: our whole project lifecycle, open-sourced.
 baseurl: "/the-process" # the subpath of your site, e.g. /blog
 url: "https://d4software.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: d4software
+github_username:  d4software
 
 # Build settings
 markdown: kramdown
