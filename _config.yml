@@ -7,7 +7,7 @@
 
 # Site settings
 owner: "D4 Software"
-title: "D4: The Process"
+title: "The Process"
 email: support@d4software.co.uk
 description: > # this means to ignore newlines until "baseurl:"
   How we build software at D4: our whole project lifecycle, open-sourced.

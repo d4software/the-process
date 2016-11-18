@@ -4,6 +4,13 @@ layout: default
 
 <div class="home">
 
+  <p>D4 is a software development studio based in Birmingham, UK.</p>
+
+  <p>We've iterated and developed on our project process for over 5 years. The process ensures we deliver well-designed, well-built software.</p>
+
+  <p>Here's our project process, in full - open sourced for you to use or adapt.</p>
+
+  {% include process-map.svg %}
 
   <ul class="post-list">
     {% for page in site.pages %}
@@ -11,7 +18,7 @@ layout: default
         <h2>
           <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
         </h2>
-        <p>{{ page.desc }}</p>
+        <p class="post-meta">{{ page.desc }}</p>
       </li>
     {% endfor %}
   </ul>

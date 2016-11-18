@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sales Process
-desc: "How we sell our services"
+desc: "How we sell our services: including lead generation, estimating, and closing."
 permalink: /sales/
 ---
 
