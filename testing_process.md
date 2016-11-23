@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Testing Process
-desc: "How we test our software."
+desc: "How we test everything we build."
 permalink: /testing/
 ---
 
