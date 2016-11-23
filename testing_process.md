@@ -1,88 +1,88 @@
 ---
 layout: page
-title: Sales Process
-desc: "How we sell our services: including lead generation, estimating, and closing."
-permalink: /sales/
+title: Testing Process
+desc: "How we test our software."
+permalink: /testing/
 ---
 
-This process is broken down into the following stages:
+*Because “works on my machine” isn’t going to cut it.*
 
-1. Prospecting / Lead Generation
 
-2. Qualifying Leads
+Once a project is ready to begin we can start to build a test plan. A test plan uses the set of user stories that were outlined in the proposal given to the client in the [sales process](https://d4software.github.io/the-process/sales/). 
 
-3. Scoping & Estimating
 
-4. Closing
+Depending on the nature of the project, we may be given web pages, or a working test version of the site or application, and this will help in the construction of the plan.
 
-   ​
 
-At each stage, we have a set of rules which absolutely should be followed, and some general tips
+The first step to writing a test plan is to identify as many possible options or routes though the system as possible. **It is often helpful to list these options in a [truth table](https://en.wikipedia.org/wiki/Truth_table)**. 
 
-## Prospecting / Lead Generation
+**For example, A User may sign in;**
 
-**Rules**:
+a) using Facebook,
 
-* Always be honest about the best technology choices for a client, even if it's less business for us.
+b) Twitter, or 
 
-**Tips**:
+c) using their email and password. 
 
-* We cannot create demand where there is none, don’t try.
 
-* Cultivate a reputation for being nice people who know their field.
 
-* Go to events and make friends with people, not just the people you think will give you work.
+**Users might be;**
 
-* Ensure that people you meet have a way to reach us (business card, connect on LinkedIn, Twitter, etc.).
+a) ‘normal users’, 
 
-* Schedule reminders to check in with former contacts from time to time.
+b) ‘managers’ or 
 
-  ​
+c) ‘admins’. 
 
-## Qualifying Leads
 
-**Rules**:
 
-* When someone contacts us with a potential project, schedule a call or meeting to assess the scope.
-* Add a potential deal to our CRM, and schedule follow up reminders.
-* Think about out what the customers really want, not just what they say they want. Try to reflect that back to them. 
-* Make a judgement about whether we can realistically meet their expectations for their likely budget, if not, politely end the discussion ASAP.
+Once the truth table of options is built, we should create a list of scenarios that should be tested for each user story. It is never possible to test every possible permutation so some judgement is required.
 
-**Tips**:
 
-* If you want to end a conversation, the best way is to say that we’re busy. It does not imply anything negative about the customer, and helps our reputation to be seen as busy. 
-* If you think a lead is a waste of time but aren’t sure, ask the client the show commitment by investing their own time. E.g. Ask for a 1-2 page brief document, ask them to come to our office, or ask them to pay for some consultancy time.
-* Pre-VC funded startups do not make good clients. They have very little money, they are often chaotic and lack clear processes, they often have a lot of technical debt, and they often believe that industry established best practices or conventions don’t apply to them.
-* Being asked to sign an NDA just to discuss a potential project is a bad sign, we just don't do that. 
+**For example;**
+We might reasonably assume that testing signin; 
 
-## Scoping & Estimating
+a) as a ‘manager’ using Facebook,
+b) as a normal user using Twitter and
+c) as an admin using email and password, is a reasonable set of test scenarios. 
 
-**Rules**:
 
-* Write down a list of user stories that the software will fulfil. E.g. “As a manager I want to view staff members’ remaining holiday entitlement”. These will form the basis of the project scope and the contractual arrangement. Send these to the customer for approval.
-* From the list of user stories, identify the nouns/entities and the list of screens that will be needed. Typically each entity has a list page, a single entity view page and a single entity create/edit page. Reports and dashboards are additional screens.
-* Using our estimation framework spreadsheet, list the entities, screens, external interfaces (e.g. Facebook login, MailChimp integration) and additional features (e.g. search, multi-file uploaded, image processing). Choose a T-shirt size for each one (e.g. XL, L, M, S, XS). The estimation framework will estimate the number of days of development required.
-* Identify other parties that will be involved. E.g. external graphic designer, other departments who will have sign off on designs etc. Add time for interfacing with these people.
-* Identify tools, technologies and existing systems that we will need to learn. Add time for learning these.
+The final test plan can then be written. It should consist of one user story per sheet. Each story then has a list of several easy and straightforward steps, with each step being assigned a ‘test status’ of either: “Passed”, “Failed” or “Not Run” as testing commences. 
 
-**Tips**:
+Those steps will cover the scenarios that were identified for testing. Havings lots of small steps, rather than a few broad tasks, ensures thorough testing and also a much better understanding of the software. 
 
-* Having estimated a project, it is often useful to informally tell the client what it looks like over the phone, before formally telling them. This saves time on preparing the proposal document if it's clear it's a non-starter, and also allows both us and the customer to change direction more easily if there are multiple options.
+Below is an example of a user story in the test plan:
 
-## Closing
 
-**Rules**:
+![Test planning](https://d4software.github.io/the-process/img/testing-test-plan.png)
 
-* Send the proposal document containing the list user stories, the cost estimate and some proposed payment milestones.
-* Follow up. Use our CRM to schedule follow up reminders.
-* If a positive response is received, draft a contract and send it to the client for a signature.
-* Do not be tempted to start work before the contract is signed. Regardless of whether the client has set expectations around deadlines.
 
-**Tips**:
 
-* Be wary of customers moving the goalposts at this stage, go back to Scoping & Estimating if necessary.
-* Be wary of customers using the promise of a project to extract free advice - recap “90% of the problem and 10% of the solution” to them.
+As each step has its own test status, it is therefore useful to have a Results sheet outlining the number of steps that have each passed, failed or have not been run (the test status will be “Not Run” only if that part of the software is not yet functional or the code for it has not been written).
 
-## Next Steps
+You can then have a chart (a pie chart is nice) to illustrate clearly the fraction of steps set to each status and the progress through the project's testing phase.
 
-Once a contract is signed, issue the commencement invoice (if there is one) and move on to the Project Management and Account Management processes.
+
+
+![Test results chart](https://d4software.github.io/the-process/img/testing-test-results.png)
+
+
+
+In addition to having a test plan, all of the user stories have tickets created for them in Jira.
+
+These are both used in conjunction with one another with Jira taking the lead as it contains both tickets for the user stories, and it will be where any bugs or other tasks are recorded.
+
+Once testing begins, any Jira tickets relating to user stories should be tested by following the steps on the relevant sheet in the test plan. If they cannot be passed, the original ‘user story’ Jira ticket remains ‘In Test’ and a new sub-task Jira ticket is created to track the bug.
+
+**It is important to record the steps that lead to the bug.** This also goes for any other bugs that are found. **Without detailed steps to reproduce, it is difficult for the developer to fix the issue.**
+
+
+
+![Testing with Jira](https://d4software.github.io/the-process/img/testing-jira.png)
+
+
+
+As you reach the end of a sprint, it is worthwhile going back to the test plan and running through it again, end to end.
+
+This gives you the chance to double check that everything is working as it should and to raise any bugs that may have been missed previously.
+
