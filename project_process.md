@@ -95,7 +95,7 @@ In Trello these are represented by columns.
 
 The meaning of these statuses, what should happen at each stage, and where the work item can go next, is defined below:
 
-<table>
+<table border="1">
   <tr>
     <td> Status </td>
     <td> Meaning </td>
@@ -164,7 +164,7 @@ Within a sprint, Jira tasks will move through a series of statuses, these are:
 
 The meanings of these statuses, what should happen at each stage, and where the work item can go to next, is defined below:
 
-<table>
+<table border="1">
   <tr>
     <td> Status </td>
     <td> Meaning </td>
