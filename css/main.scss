@@ -39,6 +39,9 @@ $on-laptop:        992px;
 	padding-top: 12px;
 }
 
+table, th, td {
+    border: 1px solid black;
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
