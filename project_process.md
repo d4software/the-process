@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Project Management Process
-desc: "Our Project Management Process is designed to ensure that the objectives defind during the Sales Process are achieved."
+desc: "Our Project Management Process is designed to ensure that the objectives defined during the Sales Process are achieved."
 permalink: /project-management/
 ---
 
