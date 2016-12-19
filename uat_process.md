@@ -64,6 +64,7 @@ We need to agree with the customer, a form of words that clearly and completely 
 If the customer is raising a bug, we need a description of (a) the steps to reproduce, (b) the expected behaviour of the system, and (c) the actual behaviour.
 
 We may need to obtain any of the following during this stage:
+
 * The actual error message the customer is seeing
 * A screenshot of their system
 * A backup of their database
@@ -75,6 +76,7 @@ We may need to obtain any of the following during this stage:
 If the customer is stating a requirement, we need one or more sentences of text and/or wireframe drawings and/or diagrams that describes the expected behaviour in it’s entirety.
 
 Some examples of inadequate “requirements” are:
+
 * “**Change the {foo} screen like we agreed on the phone call**” - we cannot reference the phonecall.
 * “**Make it like facebook, bug green**” - Too vague
 * “**Issue 48567 from our internal system**” - We cannot all easily access their system. If one of us can, we should copy the information from their system into our system.
