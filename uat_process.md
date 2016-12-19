@@ -39,7 +39,7 @@ Following acceptance of our proposal document, the Trello board (or equivalent) 
 
 It should therefore be possible to identify which user story this new issue relates to, and reference it in the description of the issue.
 
-**Catergorise**
+**Categorise**
 
 Having captured the details of the issue, we should categorise it appropriately. It could be one of the following:
 
