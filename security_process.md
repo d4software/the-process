@@ -15,6 +15,9 @@ permalink: /security/
    * Your backup disk should be encrypted to ensure that your data is secure if the backup disk is lost or stolen.
  * Project files should be stored in the appropriate Google Drive folder.
  * Your operating system should be configured to download and install security patches automatically.
+ * Access to our systems/services given to clients should be logged in the disclosure log located on Google Drive. This should not include secure data such as passwords or certificates which should instead be stored in LastPass.
+ * Access to clients systems/services should also be added to the disclosure log located on Google Drive. This should not include secure data such as passwords or certificates which should instead be stored in LastPass.
+ * The disclosure log should be regularly reviewed and access revoked where no longer necessary.
 
 **Code Repositories**
 
@@ -29,4 +32,6 @@ sudo apt-get install unattended-upgrades
 sudo dpkg-reconfigure unattended-upgrades
 ```
 
- * Servers should be hardened with a filewall (such as iptables) and servcies exposed through mature and well tested proxies (such as nginx)
+ * Servers should be hardened with a filewall (such as iptables) and services exposed through mature and well tested proxies (such as nginx).
+ * Root access should not be allowed ssh access.
+ 
