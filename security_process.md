@@ -24,7 +24,9 @@ permalink: /security/
  
  * Servers should be configured to download and install security patches automatically. E.g. on ubuntu, insall the 'unattended-upgrades' package:
 
-```sudo apt-get install unattended-upgrades
-sudo dpkg-reconfigure unattended-upgrades```
+```sh 
+sudo apt-get install unattended-upgrades
+sudo dpkg-reconfigure unattended-upgrades
+```
 
  * Servers should be hardened with a filewall (such as iptables) and servcies exposed through mature and well tested proxies (such as nginx)
