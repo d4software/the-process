@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Security Process"
-desc: "Our security process ensures we keep customer data safe and to reduce the impact of a malicious attack"
+desc: "Our security process ensures we keep customer data safe and aims to reduce the impact of a malicious attack"
 permalink: /security/
 ---
 
