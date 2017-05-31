@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Security Process
+title: "Security Process"
 desc: "Our security process ensures we keep customers data safe and that our operations are not interrupted by cyber attack"
 permalink: /security/
 ---
@@ -24,7 +24,7 @@ permalink: /security/
  
  * Servers should be configured to download and install security patches automatically. E.g. on ubuntu, insall the 'unattended-upgrades' package:
 
-    > sudo apt-get install unattended-upgrades
-    > sudo dpkg-reconfigure unattended-upgrades
+    sudo apt-get install unattended-upgrades
+    sudo dpkg-reconfigure unattended-upgrades
 
  * Servers should be hardened with a filewall (such as iptables) and servcies exposed through mature and well tested proxies (such as nginx)
