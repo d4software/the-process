@@ -216,7 +216,19 @@ The meanings of these statuses, what should happen at each stage, and where the 
 
 **Slack**
 
-Slack allows for private one to one instant messaging with each member of the team. There is also the team chat which can be used to convey messages to all members of the team. 
+Slack allows for private one to one instant messaging with each member of the team. There is also the team chat which can be used to convey messages to all members of the team.
+
+Slack is great for:
+
+ * Chatting and "being present" with the team
+ * Asking a quick question where a meeting would be overkill
+ * Optional stuff e.g. "Hey, checkout this interesting article I read"
+
+But Slack doesn't have a "flag for follow up" feature like email does, it's easy to miss important things in amoungst the team chatter, and search is limited on the free tier. So:
+
+ * If you need someone to see a thing, email it to them.
+ * If you need someone to do something, email them
+ * If you think the person might want to find this information again later on, email it to them
 
 **Project Folder (Google Drive)**
 
