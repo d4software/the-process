@@ -5,8 +5,6 @@ desc: "Practices we follow while developing software."
 permalink: /development/
 ---
 
-## Development Process
-
 This is list of practicies that we follow while developing software:
 
  * Projects are versioned using the approach outlined at [http://semver.org](http://semver.org)
